@@ -1,0 +1,28 @@
+name: Mine-Bans Integration
+version: 1.0.1
+description: Connects your Minecraft server to SourceBans.
+author: JasonBray
+website: http://jasonbray.us
+
+main: com.github.JasonJosephBray.MineBansIntegration.MineBansIntegration
+database: false
+
+commands:
+  linkprofile:
+    description: Link a minecraft account to a SourceBans account
+    aliases: [link_profile, linkProfile]
+    permission: minebans.link
+    usage:  |
+      /<command> [player] [STEAM_ID]
+      Example: /<command> jasonbray STEAM_0:0:22878083 - link jasonbray's profile to specified STEAM_ID
+
+permissions:
+  minebans.*:
+    description: Gives access to all MineBans commands
+    children:
+      minebans.link: true
+  minebans.link:
+    description: Allows you to link Minecraft names to STEAM IDs
+    default: op
+    
+

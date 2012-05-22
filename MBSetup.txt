@@ -1,0 +1,13 @@
+#WARNING: Ensure that all fields are kept in order and no newlines are added. Comments are signaled by a '#'
+#NOTE: Server must be fully restarted for these changes to take effect
+#
+#IP
+localhost
+#Port
+3306
+#User-name
+root
+#Password
+banana
+#Database Name
+minebans_test
